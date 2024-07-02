@@ -3850,7 +3850,7 @@ smob@^1.0.0:
   resolved "https://registry.yarnpkg.com/smob/-/smob-1.5.0.tgz#85d79a1403abf128d24d3ebc1cdc5e1a9548d3ab"
   integrity sha512-g6T+p7QO8npa+/hNx9ohv1E5pVCmWrVCUzUXJyLdMmftX6ER0oiWY/w9knEonLpnOp6b6FenKnMfR8gqwWdwig==
 
-solid-js@^1.8.17:
+solid-js@^1.8.18:
   version "1.8.18"
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.8.18.tgz#ef1b28c8d0eea4a3f5242aa142a36d7a7a456da9"
   integrity sha512-cpkxDPvO/AuKBugVv6xKFd1C9VC0XZMu4VtF56IlHoux8HgyW44uqNSWbozMnVcpIzHIhS3vVXPAVZYM26jpWw==

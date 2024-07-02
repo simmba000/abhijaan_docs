@@ -2,16 +2,18 @@ import { A, useLocation } from "@solidjs/router";
 
 export default function Nav() {
     const location = useLocation();
-    const active = (path) =>
-        path == location.pathname ? "border-b-4 border-orange-400 bg-orange-300 font-bold" : "border-t-4 border-transparent hover:bg-orange-300";
-    console.log(location.pathname);
+    const isHome = () => location.pathname === "/" ? "text-white" : "hover:border-orange-200 hover:text-orange-100";
+    const isDocs = () => location.pathname.slice(0, ("/docs/").length) === "/docs/" ? "text-white" : "hover:border-orange-200 hover:text-orange-100";
+    // const isHome = () => location.pathname === "/" ? "font-bold text-white" : "hover:border-orange-200 hover:text-orange-100";
+    // const active = (path) =>
+    //     path == location.pathname ? "font-bold text-white" : "hover:border-orange-200 hover:text-orange-100";
     return (
-        <nav class="w-full top-0 sticky bg-orange-200 p-2 shadow-md">
+        <nav class="w-full top-0 sticky bg-orange-500 p-2 shadow-md text-orange-300">
             <ul className="flex flex-row justify-center">
-                <li class={`mx-4 p-1 px-4 ${active("/")}`}>
+                <li class={`mx-1 p-1 border-b border-transparent px-4 ${isHome()}`}>
                     <A href="/">Home</A>
                 </li>
-                <li class={`mx-4 p-1 px-4 ${active("/docs")}`}>
+                <li class={`mx-1 p-1 border-b border-transparent px-4 ${isDocs()}`}>
                     <A href="/docs/">Docs</A>
                 </li>
             </ul>

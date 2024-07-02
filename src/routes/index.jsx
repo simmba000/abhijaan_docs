@@ -1,5 +1,9 @@
 export default function Home() {
     return (
-        <>Home</>
+        <main class="h-full flex w-full bg-gray-100">
+          <div>
+            content
+          </div>
+        </main>
     );
 }
