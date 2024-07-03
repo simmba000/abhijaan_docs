@@ -8,7 +8,7 @@ export default function Nav() {
     // const active = (path) =>
     //     path == location.pathname ? "font-bold text-white" : "hover:border-orange-200 hover:text-orange-100";
     return (
-        <nav class="w-full top-0 sticky bg-orange-500 p-2 shadow-md text-orange-300">
+        <nav class="w-full top-0 sticky bg-orange-500 p-2 shadow-md text-orange-300 z-40">
             <ul className="flex flex-row justify-center">
                 <li class={`mx-1 p-1 border-b border-transparent px-4 ${isHome()}`}>
                     <A href="/">Home</A>
