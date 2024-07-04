@@ -13,7 +13,7 @@ export default function Layout({children}) {
                 <div class={`w-full bg-white h-full z-30 text-center top-12 sm:top-4 sticky sm:text-left sm:h-full sm:w-56 pt-2 sm:pt-10 ${docMode("/docs/")}`}>
                     <DocsMenu />
                 </div>
-                <div class="flex-1 min-h-[99vh] border-s-2 ">
+                <div class="flex-1 min-h-[99vh] border-s-2">
                     {children}
                 </div>
             </div>
