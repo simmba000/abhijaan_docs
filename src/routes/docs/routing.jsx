@@ -13,7 +13,7 @@ export default function Routing() {
           <div class="text-sm">
             Below is an example demonstrating how to assign a route:
             <div class="ps-4">
-              <CardCode comment="route( '/url_route', 'file_path.php' );">
+              <CardCode path="routes/routes.php" comment="route( '/url_route', 'file_path.php' );">
                 <span class="text-orange-600">route(</span>
                 <span class="text-sky-600 px-1">'/home'</span>
                 <span class="text-orange-600">,</span>
@@ -32,7 +32,7 @@ export default function Routing() {
                       The by default route is a dynamic route that functions for both POST and GET requests,
                       eliminating the need for separate POST route declarations.
                     </p>
-                    <CardCode comment="route( '/url_route', 'file_path.php' );">
+                    <CardCode path="routes/routes.php" comment="route( '/url_route', 'file_path.php' );">
                       <span class="text-orange-600">route(</span>
                       <span class="text-sky-600 px-1">'/home'</span>
                       <span class="text-orange-600">,</span>
@@ -45,7 +45,7 @@ export default function Routing() {
                 <div class="text-sm font-normal ps-4 py-3">
                   <p class="text-justify leading-7">The GET routes also follow the syntax of the default dynamic route that handles both POST and GET requests.</p>
                   {/* <p class="text-justify leading-7">The syntax is : </p> */}
-                  <CardCode comment="route( '/url_route', 'file_path.php' );">
+                  <CardCode path="routes/routes.php" comment="route( '/url_route', 'file_path.php' );">
                     <span class="text-orange-600">route(</span>
                     <span class="text-sky-600 px-1">'/home/GET'</span>
                     <span class="text-orange-600">,</span>
@@ -57,7 +57,7 @@ export default function Routing() {
                     Unlike in some other frameworks that require defining all keys when assigning routes, 
                     the Abhijaan framework offers dynamic routes by appending the key 'GET' at the end.</p>
                   {/* <p class="text-justify leading-7">example : </p> */}
-                  <CardCode comment="route( '/url_route/GET', 'file_path.php' );">
+                  <CardCode path="routes/routes.php" comment="route( '/url_route/GET', 'file_path.php' );">
                     <span class="text-orange-600">route(</span>
                     <span class="text-sky-600 px-1">'/home'</span>
                     <span class="text-orange-600">,</span>

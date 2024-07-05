@@ -5,13 +5,16 @@ export default function CardCode(props) {
         <div class="rounded-md bg-slate-300 mb-6 mt-4 max-w-screen-md font-semibold">
             <div class="flex flex-col leading-7">
                 <div class="border-b border-gray-800 px-4 py-2">
-                    <p class="tracking-wider text-sm text-gray-800">routes/routes.php</p>
+                    <p class="tracking-wider text-sm text-gray-800">{props.path}</p>
                 </div>
                 <div class="px-6 py-4">
                     <p class="tracking-wider text-orange-600">{'<?php'}</p>
-                    <p class="tracking-wider text-green-600">
-                        // {props.comment}
-                    </p>
+                    {
+                        props.comment ?
+                        <p class="tracking-wider text-green-600">
+                            // {props.comment}
+                        </p> : ''
+                    }
                     <br />
                     <p class="tracking-wider">
                         {props.children}
