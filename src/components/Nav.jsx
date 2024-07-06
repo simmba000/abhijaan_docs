@@ -8,17 +8,7 @@ export default function Nav() {
     const isHome = () => location.pathname === "/" ? "text-white" : "hover:border-orange-200 hover:text-orange-100";
     const isDocs = () => location.pathname.slice(0, ("/docs/").length) === "/docs/" ? "text-white" : "hover:border-orange-200 hover:text-orange-100";
     const isToggleVisible = () => location.pathname.slice(0, ("/docs/").length) === "/docs/" ? "sm:hidden" : "hidden";
-    // const isHome = () => location.pathname === "/" ? "font-bold text-white" : "hover:border-orange-200 hover:text-orange-100";
-    // const active = (path) =>
-    //     path == location.pathname ? "font-bold text-white" : "hover:border-orange-200 hover:text-orange-100";
-    const [menuVisible, setMenuVisible] = createSignal("hidden");
-    const handleMenu = (isToggle) => {
-        if (isToggle === false) {
-            setMenuVisible("hidden");
-        } else {
-            setMenuVisible("block");
-        }
-    }
+    
     return (
         <nav class="w-full top-0 sticky bg-orange-500 p-2 shadow-md text-orange-300 z-40 flex justify-between">
             <div class="rounded-md bg-orange-100 border-2 border-white p-1.5">
@@ -34,7 +24,7 @@ export default function Nav() {
             </ul>
             <div>
                 <div class={isToggleVisible()}>
-                    <ToggleMenuButton onToggle={handleMenu} />
+                    <ToggleMenuButton />
                 </div>
             </div>
         </nav>

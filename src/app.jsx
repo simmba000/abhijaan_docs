@@ -3,7 +3,7 @@ import "./app.css";
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import Layout from "./components/Layout";
-import Home from "./routes";
+import { ContextProvider } from "./contextAPI/context";
 
 export default function App() {
 
@@ -18,9 +18,11 @@ export default function App() {
   return (
     <Router root={props=> (
         <Suspense>
-          <Layout>
-            {props.children}
-          </Layout>
+          <ContextProvider>
+            <Layout>
+              {props.children}
+            </Layout>
+          </ContextProvider>
         </Suspense>
     )}>
       <FileRoutes />
