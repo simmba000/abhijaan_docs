@@ -6,7 +6,12 @@ export default {
       sans: ['Inter', 'sans-serif'], // Use Inter font for sans-serif
       serif: ['Georgia', 'serif'], // Use Georgia font for serif
     },
-    extend: {},
+    extend: {
+      colors: {
+        customBlue: 'rgb(17, 24, 39)',
+        customOrange: '#ff3a00',
+      },
+    },
   },
   plugins: [],
 }

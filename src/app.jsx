@@ -4,6 +4,7 @@ import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
 import Layout from "./components/Layout";
 import { ContextProvider } from "./contextAPI/context";
+import LoadingOverlay from "./components/LoadingOverlay";
 
 export default function App() {
 
@@ -19,7 +20,9 @@ export default function App() {
     <Router root={props=> (
         <Suspense>
           <ContextProvider>
+          <LoadingOverlay/>
             <Layout>
+            
               {props.children}
             </Layout>
           </ContextProvider>
